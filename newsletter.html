@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+    Author: Jakob Allen
+    Date: 04/29/2026
+-->
+<html lang="en">
+
+<head>
+    <title>Subscribe to our newsletter - Henry Vilas Zoo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <link href="stylesheets/newsletter.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Henry Vilas Zoo Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="animals.html">Meet the Animals</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <p>
+            Sign up for zoo updates, animal news, conservation stories, and special event reminders delivered straight to your inbox.
+        </p>
+
+        <section id="signupForm">
+            <h1>Newsletter Signup</h1>
+
+            <aside>An asterisk denotes a required field.</aside>
+
+            <form action="/.netlify/functions/echo" method="post">
+
+                <label for="firstName">*First Name:</label>
+                <input type="text" name="firstName" id="firstName" pattern="[A-Za-z ]+" title="Please enter letters and spaces only" required>
+
+                <br>
+
+                <label for="lastName">*Last Name:</label>
+                <input type="text" name="lastName" id="lastName" pattern="[A-Za-z ]+" title="Please enter letters and spaces only" required>
+
+                <br>
+
+                <label for="email">*Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <br>
+
+                <label for="favoriteAnimal">Favorite Animal Group:</label>
+                <select name="favoriteAnimal" id="favoriteAnimal">
+                    <option value="mammals">Mammals</option>
+                    <option value="birds">Birds</option>
+                    <option value="reptiles">Reptiles</option>
+                    <option value="amphibians">Amphibians</option>
+                    <option value="insects">Insects</option>
+                </select>
+
+                <fieldset>
+                    <legend>Newsletter Interests</legend>
+                    
+                    <input type="checkbox" id="animalUpdates" name="animalUpdates" value="animalUpdates">
+                    <label for="animalUpdates">Animal Updates</label>
+
+                    <br>
+
+                    <input type="checkbox" id="events" name="events" value="events">
+                    <label for="events">Events and Activities</label>
+
+                    <br>
+
+                    <input type="checkbox" id="conservation" name="conservation" value="conservation">
+                    <label for="conservation">Conservation News</label>
+
+                    <br>
+
+                    <input type="checkbox" id="familyPrograms" name="familyPrograms" value="familyPrograms">
+                    <label for="familyPrograms">Family Programs</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Email Frequency</legend>
+
+                    <input type="radio" id="weekly" name="emailFrequency" value="weekly" checked>
+                    <label for="weekly">Weekly</label>
+
+                    <br>
+
+                    <input type="radio" id="monthly" name="emailFrequency" value="monthly">
+                    <label for="monthly">Monthly</label>
+                </fieldset>
+
+                <label for="comments">Comments or Questions:</label>
+                <br>
+                <textarea name="comments" id="comments"></textarea>
+
+                <br>
+
+                <div id="buttonContainer">
+
+                    <input type="submit" value="Join Newsletter">
+
+                    <input type="reset" value="Clear Form">
+
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Henry Vilas Zoo</p>
+        <address>Developed by: <a href="mailto:jakob@jakoballen.dev">Jakob Allen</a></address>
+    </footer>
+
+</body>
+
+</html>

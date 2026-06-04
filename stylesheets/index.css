@@ -1,0 +1,72 @@
+/*
+    Jakob Allen
+    04/29/2026
+*/
+
+/*
+    Main Image Styles
+*/
+.introSection {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.introSection img {
+    width: 35%;
+    max-width: 500px;
+    min-width: 300px;
+    height: auto;
+}
+
+.introText {
+    flex: 1;
+}
+
+/*
+    Table Styles
+*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #A85F3A;
+    color: #ffffff;
+}
+
+/*
+    Table Row Hover Styles
+*/
+tr:hover {
+    background-color: #4A3D34;
+    color: #ffffff;
+}
+
+/*
+    Clear float on table
+*/
+#upcomingEvents {
+    clear: none;
+}
+
+@media (max-width: 55em) {
+    .introSection {
+        flex-direction: column;
+    }
+
+    .introSection img {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+}

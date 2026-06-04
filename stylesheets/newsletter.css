@@ -1,0 +1,113 @@
+/*
+    Jakob Allen
+    04/29/2026
+*/
+
+/* 
+    Text directly above form styles
+*/
+#signupForm h1, #signupForm aside {text-align: center;} 
+
+#signupForm aside {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/*
+    Form Styles
+*/
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #2B2B2B;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #555;
+    color: #E8E0D6;
+}
+
+/*
+    Label Styles
+*/
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/*
+    Input Fields Styles
+*/
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    background-color: #3A312A;
+    color: #E8E0D6;
+    border: 1px solid #666;
+    border-radius: 6px;
+}
+
+/*
+    Textarea default size
+*/
+textarea {height: 100px;}
+
+/*
+    Fieldset Styles
+*/
+fieldset {
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+/*
+    Legend Styles
+*/
+legend {
+    font-weight: bold;
+    color: #DDB892;
+}
+
+/*
+    Checkbox, Radio Styles
+*/
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+/*
+    Fieldset Label Styles
+*/
+fieldset label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/*
+    Button Styles
+*/
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+#buttonContainer input {
+    padding: 8px 12px;
+    border: 2px solid #7A5230;
+    border-radius: 8px;
+    background-color: #4A3D34;
+    color: #E8E0D6;
+    margin: 10px;
+    font-weight: bold;
+}
+
+#buttonContainer input:hover {
+    background-color: #B94A3D;
+    color: white;
+}

@@ -1,0 +1,38 @@
+/*
+    Jakob Allen
+    04/29/2026
+*/
+
+/*
+    Styles for each animal card
+*/
+article {
+    background-color: #2B2B2B;
+    border: 2px solid #555;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px auto;
+    overflow: hidden;
+    color: #E8E0D6;
+}
+
+/*
+    Animal Image Styles
+*/
+article img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #555;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    float:left;
+}
+
+/*
+    Card Header Styles
+*/
+article h2 {
+    margin-top: 0;
+    color: #DDB892;
+}

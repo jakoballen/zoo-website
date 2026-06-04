@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+    Author: Jakob Allen
+    Date: 04/29/2026
+-->
+<html lang="en">
+
+<head>
+    <title>Contact Us - Henry Vilas Zoo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <link href="stylesheets/contact.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Henry Vilas Zoo Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="animals.html">Meet the Animals</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>
+            Have questions about your visit or need help planning your day? Reach out to us using the information below or send us a message.
+        </p>
+
+        <section>
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 702 S Randall Ave. Madison, WI 53715</p>
+            <p><strong>Phone:</strong> <a href="tel:608-123-1234">(608) 123-1234</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@henryvilaszoo.net">info@henryvilaszoo.net</a></p>
+        </section>
+
+        <section>
+            <h2>Hours of Operation</h2>
+            <p>Daily: 10am-8pm</p>
+        </section>
+
+        <section id="contactForm">
+            <h2>Send Us a Message</h2>
+
+            <form action="/.netlify/functions/echo" method="post">
+                <label for="name">*Name</label>
+                <input type="text" name="name" id="name" pattern="[A-Za-z ]+" title="Please enter letters and spaces only" required>
+
+                <br>
+
+                <label for="email">*Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <br>
+
+                <label for="phone">*Phone</label>
+                <input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" title="Please use the format 123-456-7890" required>
+
+                <br>
+
+                <label for="subject">Subject:</label>
+                <select name="subject" id="subject">
+                    <option value="general">General Question</option>
+                    <option value="tickets">Tickets</option>
+                    <option value="events">Events</option>
+                    <option value="accessibility">Accessibility</option>
+                </select>
+
+                <br>
+
+                <label for="message">*Message</label>
+                <br>
+                <textarea name="message" id="message" required></textarea>
+
+                <div id="buttonContainer">
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Henry Vilas Zoo</p>
+        <address>Developed by: <a href="mailto:jakob@jakoballen.dev">Jakob Allen</a></address>
+    </footer>
+
+</body>
+
+</html>
